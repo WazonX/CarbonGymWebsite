@@ -25,7 +25,8 @@ export default function RootLayout({
   const styles = {
     marginTop: '20px',
     background:  'rgba(0, 0, 0, 0.65)',
-    paddingBottom: '15vh'
+    // paddingBottom: '20vw',
+    minHeight: '80vh',
   };
   return (
     <html lang="pl"  >
@@ -36,7 +37,7 @@ export default function RootLayout({
       <div className="bg" ></div>
         <Scroll/>
               <Header/>
-            <div style={styles} className="container h-100 middle-row rounded text-white ">
+            <div style={styles} className="container pb-2 h-100 middle-row rounded text-white ">
               {children}
             </div>
             <Footer/>

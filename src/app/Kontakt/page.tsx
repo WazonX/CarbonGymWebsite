@@ -19,7 +19,7 @@ export default function Home(){
             <h1 className="text-center text-uppercase headingSize">
                 Zapraszamy!
             </h1>
-            <h2 className="text-mid mt-5 text-center">
+            <h2 className="text-mid mt-3 text-center">
                 <div className="row mt-3">
                     <div className="col-12">
                         Od poniedziałku do piątku w godzinach:

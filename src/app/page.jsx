@@ -34,7 +34,7 @@ function Home() {
       </ul>
       <div className="row mt-4 mb-2">
         <div className="col">
-          <h1 className="display-5 text-center">Honorujemy:</h1>
+          <h1 className="headingSize text-center">Honorujemy:</h1>
         </div>
       </div>
       <motion.div

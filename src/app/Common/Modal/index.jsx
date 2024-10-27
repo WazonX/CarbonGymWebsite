@@ -7,19 +7,19 @@ const dropIn = {
   hide: {
     opacity: 0,
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.06,
     },
   },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.06,
     },
   },
   exit: {
     opacity: 0,
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.06,
     },
   },
 };
@@ -29,14 +29,14 @@ const itemVariants = {
     y: "50vh",
     opacity: 0,
     transition: {
-      stiffness: 1000, damping: 150, velocity: 100,
+     stiffness: 1000, damping: 150, velocity: 100, duration: 0.3,
     }
   },
   visible: {
     y: "0",
     opacity: 1,
     transition: {
-      stiffness: 1000,
+      stiffness: 1000,duration: 0.3,
     }
   }
 };

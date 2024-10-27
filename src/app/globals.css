@@ -22,13 +22,31 @@
   }
 }
 
+@media only screen and (max-width: 1000px){
+  .gallery-item{
+    flex: 1 1 40% !important;
+  }
+}
+
+@media only screen and (min-height: 1000px){
+  .gallery-item{
+    flex: 1 1 40% !important;
+  }
+}
+
+@media only screen and (max-width: 340px){
+  .gallery-item{
+    flex: 1 1 50% !important;
+  }
+}
+
 .w-fit{
   width: fit-content;
 }
 
 .gallery-container {
   border-radius: 25px;
-  height: max(50vw,380px);
+  height: 100vh;
   padding: 0 20px 20px 0;
   display: flex;
   flex-wrap: wrap;
@@ -53,7 +71,7 @@
 }
 
 .cards-item img{
-  height: 9vw;
+  height: 90%;
   width: 100%;
   border-radius: 5%;
 }
@@ -321,7 +339,7 @@
 }
 
 .text-mid{
-  font-size: min(4vw, 30px);
+  font-size: 2vw;
 }
 
 .text-mid-bigger{
