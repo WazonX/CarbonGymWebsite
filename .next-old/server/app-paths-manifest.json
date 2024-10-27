@@ -1,0 +1,11 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/Galeria/page": "app/Galeria/page.js",
+  "/Grafik/page": "app/Grafik/page.js",
+  "/page": "app/page.js",
+  "/Regulamin/page": "app/Regulamin/page.js",
+  "/ONas/page": "app/ONas/page.js",
+  "/Cennik/page": "app/Cennik/page.js",
+  "/Kontakt/page": "app/Kontakt/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
+}
