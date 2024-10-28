@@ -5,9 +5,9 @@ import Link from "next/link";
 
 const dropIn = {
   hide: {
-    opacity: 0,
+    opacity: 1,
     transition: {
-      staggerChildren: 0.06,
+      staggerChildren: 0.,
     },
   },
   visible: {
@@ -17,7 +17,7 @@ const dropIn = {
     },
   },
   exit: {
-    opacity: 0,
+    opacity: 1,
     transition: {
       staggerChildren: 0.06,
     },
@@ -26,19 +26,19 @@ const dropIn = {
 
 const itemVariants = {
   hide: {
-    y: "50vh",
+    y: "-50vh",
     opacity: 0,
     transition: {
-     stiffness: 1000, damping: 150, velocity: 100, duration: 0.3,
+    type:"spring", bouce:1, stiffness: 1000, damping: 150, velocity: 100, duration: 0.3,
     }
   },
   visible: {
     y: "0",
     opacity: 1,
     transition: {
-      stiffness: 1000,duration: 0.3,
+      type:"spring", stiffness: 1000, damping: 150, velocity: 100, duration: 0.3,
+      }
     }
-  }
 };
 
 
@@ -53,7 +53,7 @@ const Modal = ({ handleClose, text }) => {
       >
         <motion.ul
           variants={dropIn}
-          animate={text ? "visible" : "hide"}
+          animate={text ? "visible" : "hude"}
           initial="hide"
           exit="exit"
         >

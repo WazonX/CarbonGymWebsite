@@ -29,7 +29,7 @@ export default function Footer(){
                     </Link>
                 </div>
                 <div className="row">
-                        <p className="col mx-auto mt-3 text-white footLink">
+                        <p className="col mx-auto mt-3 mb-0 text-white footLink">
                             © CarbonGym by Michał Adach 2024
                         </p>
                 </div>
