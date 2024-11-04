@@ -46,7 +46,7 @@
 
 .gallery-container {
   border-radius: 25px;
-  height: 100vh;
+  min-height: 80vh;
   padding: 0 20px 20px 0;
   display: flex;
   flex-wrap: wrap;
@@ -81,6 +81,7 @@
   background-size:160%;
   background-position: center;
   border-radius: 10%;
+  max-height: 20vh;
   cursor: pointer;
   margin:2vw 0 0 2vw;
   flex: 1 1 20%;
@@ -88,12 +89,12 @@
 
 .overlay {
   background: rgb(0, 0, 0);
-  opacity: 0.2;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+  transition: 0.3;
 }
 
 .single-image-container {
@@ -117,11 +118,9 @@
   background-repeat: no-repeat;
   background-size:contain;
   background-position: center;
-  border-radius: 10%;
   width: 70%;
   height: 70%;
 }
-
 
 .centerText{
   display: flex;
@@ -153,14 +152,6 @@
   z-index: 30;
   width: 100%;
   height: 100%;
-}
-
-.exit{
-  background-image: url(./Images/exit-full-screen-svgrepo-com.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 50%;
-
 }
 
 .btnMob img{
@@ -236,6 +227,12 @@
   .headerPC{
     display: none;
   }
+
+  .single-image{
+    width: 96%;
+    height: 80%;
+  }
+
 
   .social-btn a, .social-btn span{
     box-shadow: 0 0 6px #ffffff89;

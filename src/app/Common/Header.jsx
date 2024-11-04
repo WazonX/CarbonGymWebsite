@@ -1,7 +1,6 @@
 'use client';
 import Link from "next/link";
 import {React, useState } from "react";
-import logo from "../Images/Logo.png"
 import burger from "../Images/burger-menu-svgrepo-com.svg"
 import { AnimatePresence, motion } from 'framer-motion'
 import Modal from "./Modal/index";

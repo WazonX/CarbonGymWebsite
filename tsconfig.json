@@ -33,7 +33,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "build/types/**/*.ts"
-, "src/app/Galeria/page.js", "src/app/ONas/page.tsx", "src/app/page.jsx"  ],
+, "src/app/Galeria/page.tsx", "src/app/ONas/page.tsx", "src/app/page.jsx", "src/app/Cennik/cennikData.js", "src/app/Cennik/page.tsx"  ],
   "exclude": [
     "node_modules"
   ]
