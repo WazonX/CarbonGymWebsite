@@ -54,31 +54,28 @@ function Gallery({ items, setIndex }:{items:any,setIndex:any}) {
   }
   
   export default function App() {
-    const [index, setIndex] = useState(false);
-  
+    const [id, setId] = useState(-1);
     return (
       <div className="w-100">
-        <Gallery items={images} setIndex={setIndex} />
+        <Gallery items={images} setIndex={setId} />
         <AnimatePresence>
-          {index !== false && (
+          {id !== -1 && (
             <motion.div
               initial={{ opacity: 0}}
               animate={{ opacity: 0.8, transition:{duration:0.3} }}
               exit={{ opacity: 0, transition:{duration:0.3}  }}
               key="overlay"
               className="overlay"
-              onClick={() => setIndex(false)}
+              onClick={() => setId(-1)}
             />
           )}
-  
-          {index !== false && (
-            <SingleImage
+          
+          {id !== -1 && (         
+              <SingleImage
               key="image"
-              index={index}
-              image={images[index]}
-              setIndex={setIndex}
-              onClick={() => setIndex(false)}
-            />
+              image={images[id]}      
+              onClick={() => setId(-1)}
+            />            
           )}
         </AnimatePresence>
       </div>

@@ -17,8 +17,7 @@ function ONas(){
             <h1 className="text-center col-12 heading-center-column text-uppercase headingSize">
             CarbonGym <span className="spanSmall">by</span> Michał Adach
             </h1>
-            <div className="col-2"></div>
-            <p className="mt-3 text-center col-8 text-mid px-1 ">
+            <p className="mt-3 text-center col text-mid px-4 ">
                 <span className='spanSmall text-center'>
                     Węgiel (carbon)
                 </span> to pierwiastek chemiczny z grupy niemetali, jest podstawą życia na Ziemi, opiera się na nim cała chemia organiczna. Ponadto jego odmiana – DIAMENT jest jednym z najtwardszych materiałów na Ziemi, z kolei inna odmiana – GRAFIT jest miękka i można nią rysować po delikatnym papierze…
@@ -28,11 +27,10 @@ function ONas(){
             <h1 className="text-center col-12 heading-center-column mt-3 mb-3 text-uppercase headingSize">
             Nasi Trenerzy
             </h1>
-            <h1 className="text-center mt-2 col-12 heading-center-column text-uppercase headingSize">
+            <h1 className="text-center mt-2 col-12 w-100 heading-center-column text-uppercase headingSize">
                 Michał Adach
             </h1>
-            <div className="col-2"></div>
-            <div className="col-8">
+            <div className="col px-4">
                 <motion.img 
                 initial="hidden"
                 whileInView="visible"
@@ -52,8 +50,7 @@ function ONas(){
             <h1 className="text-center mt-3 col-12 heading-center-column text-uppercase headingSize">
                 Zosia Gembarzewska-Adach
             </h1>
-            <div className="col-2"></div>
-            <div className="col-8">
+            <div className="col px-4">
                 <motion.img 
                 initial="hidden"
                  whileInView="visible"

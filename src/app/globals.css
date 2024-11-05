@@ -16,30 +16,6 @@
   height:100%;
 }
 
-@media only screen and (max-width: 450px){
-  .gallery-item{
-    flex: 1 1 30% !important;
-  }
-}
-
-@media only screen and (max-width: 1000px){
-  .gallery-item{
-    flex: 1 1 40% !important;
-  }
-}
-
-@media only screen and (min-height: 1000px){
-  .gallery-item{
-    flex: 1 1 40% !important;
-  }
-}
-
-@media only screen and (max-width: 340px){
-  .gallery-item{
-    flex: 1 1 50% !important;
-  }
-}
-
 .w-fit{
   width: fit-content;
 }
@@ -64,14 +40,13 @@
 }
 
 .cards-item{
-  /* height: 10vw; */
   margin:2vw 0 0 2vw;
   flex: 1 1 30%;
   border: 0;
 }
 
 .cards-item img{
-  height: 90%;
+  aspect-ratio: 16/9;
   width: 100%;
   border-radius: 5%;
 }
@@ -81,10 +56,10 @@
   background-size:160%;
   background-position: center;
   border-radius: 10%;
-  max-height: 20vh;
   cursor: pointer;
   margin:2vw 0 0 2vw;
   flex: 1 1 20%;
+  aspect-ratio: 1/1;
 }
 
 .overlay {
@@ -114,12 +89,28 @@
 }
 
 .single-image {
+  aspect-ratio: 16/9;
   position: fixed;
   background-repeat: no-repeat;
-  background-size:contain;
+  background-size:cover;
   background-position: center;
-  width: 70%;
-  height: 70%;
+  width:80%;
+}
+
+@media only screen and (max-width: 1000px){
+  .gallery-item{
+    flex: 1 1 30%;
+  }
+  
+  .gallery-container{
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 770px){
+  .gallery-item{
+    flex: 1 1 40%;
+  }
 }
 
 .centerText{
@@ -227,12 +218,6 @@
   .headerPC{
     display: none;
   }
-
-  .single-image{
-    width: 96%;
-    height: 80%;
-  }
-
 
   .social-btn a, .social-btn span{
     box-shadow: 0 0 6px #ffffff89;
